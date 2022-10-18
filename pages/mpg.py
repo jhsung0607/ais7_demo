@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import plotly.express as px
 import pandas as pd
 import numpy as np
-
+import koreanize_matplotlib
 
 st.set_page_config(
     page_title="자동차 연비 app",
