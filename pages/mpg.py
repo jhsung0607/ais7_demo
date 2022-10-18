@@ -55,8 +55,8 @@ fig, ax = plt.subplots(figsize=(10, 3))
 sns.countplot(data=data, x="origin").set_title("지역별 자동차 연비 데이터 수")
 st.pyplot(fig)
 
-sns.countplot(data=data, x="cylinders").set_title("실린더 갯수별 자동차 연비 데이터 수")
-st.pyplot(fig)
+lmp = sns.lmplot(data=data, x="mpg", y="weight",hue="origin")
+st.pyplot(lmp)
 
 pxh = px.histogram(data, x="origin", title="지역별 자동차 연비 데이터 수")
 st.plotly_chart(pxh)
